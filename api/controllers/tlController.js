@@ -27,3 +27,18 @@ exports.read_a_task = function(req, res) {
   });
 };
 
+exports.update_a_task = function(req, res) {
+  Task.findOneAndUpdate({_id: req.params.taskID}, req.body, {new: true}, function(err, task) {
+    if(err)
+      res.send(err);
+    res.json(task);
+  });
+};
+
+exports.delete_a_task = function(req, res) {
+  Task.remove({_id: req.params.taskID}, function(err, task) {
+    if(err)
+      res.send(err);
+    res.json({ message: 'Task succesfully deleted.' });
+  });
+};
