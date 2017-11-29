@@ -4,7 +4,8 @@
   "description": "throwing together a quick and dirty node api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/jaysonbucy/node-api#readme",
   "dependencies": {
+    "express": "^4.16.2",
     "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }
