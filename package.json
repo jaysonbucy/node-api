@@ -19,7 +19,8 @@
   "homepage": "https://github.com/jaysonbucy/node-api#readme",
   "dependencies": {
     "express": "^4.16.2",
-    "mongodb": "^2.2.33"
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.5"
   },
   "devDependencies": {
     "nodemon": "^1.12.1"
